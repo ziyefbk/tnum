@@ -14,6 +14,16 @@ impl Tnum {
     pub fn new(value: u64, mask: u64) -> Self {
         Self { value, mask }
     }
+    
+    /// 获取 value 字段
+    pub fn value(&self) -> u64 {
+        self.value
+    }
+
+    /// 获取 mask 字段
+    pub fn mask(&self) -> u64 {
+        self.mask
+    }
 }
 
 /// 创建一个常数 tnum 实例
@@ -357,12 +367,4 @@ pub fn tnum_with_subreg(reg: Tnum, subreg: Tnum) -> Tnum {
 /// tnum 的常数 subreg 操作
 pub fn tnum_const_subreg(a: Tnum, value: u32) -> Tnum {
     tnum_with_subreg(a, tnum_const(value as u64))
-}
-
-pub fn value(&self) -> u64 {
-    self.value
-}
-
-pub fn mask(&self) -> u64 {
-    self.mask
 }

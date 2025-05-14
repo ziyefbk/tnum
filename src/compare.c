@@ -281,8 +281,7 @@ int main(int argc, char *argv[])
 
 
     // 打印统计结果
-    printf("\n=== 性能与正确性比较（以C_tnum_mul为基准）===\n");
-    printf("%-24s %-21s %s\n", "方法", "平均时间(ns)", "正确率");
+    printf("%-24s%21s%s\n", "method", "average time(ns)", "accuracy");
     printf("------------------------------------------------------------------------\n");
 
     for (int i = 0; i < NUM_METHODS; i++)

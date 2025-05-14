@@ -11,3 +11,7 @@ serde_json = "1.0"
 [[bin]]
 name = "test_mul"
 path = "src/tnum_mul.rs"
+
+[[bin]]
+name = "compare"
+path = "src/compare.rs"

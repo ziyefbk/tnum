@@ -20,7 +20,7 @@ tnum/
 │   ├── test.rs            # Rust test generation
 │   ├── tnum.c             # C implementation of Tnum operations
 │   ├── tnum_mul.c         # C multiplication implementation  
-│   └── compare.c          # Results comparison tool
+│   └── compare.rs          # Results comparison tool
 ├── include/               # Header files
 │   └── tnum.h             # Tnum structs and function declarations
 ├── build/                 # Build artifacts (created during build)

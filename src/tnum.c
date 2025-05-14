@@ -86,3 +86,11 @@ struct tnum tnum_mul(struct tnum a, struct tnum b)
 	}
 	return tnum_add(TNUM(acc_v, 0), acc_m);
 }
+
+bool tnum_in(struct tnum a, struct tnum b)
+{
+	if (b.mask & ~a.mask)
+		return false;
+	b.value &= ~a.mask;
+	return a.value == b.value;
+}

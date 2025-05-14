@@ -62,8 +62,8 @@ fn run_method_test(
 
 fn random_tnum() -> Tnum {
     let mut rng = rng(); //random seed
-    let rawa: u64 = rng.random();
-    let rawb: u64 = rng.random();
+    let rawa: u64 = rng.random::<u64>() % 256;
+    let rawb: u64 = rng.random::<u64>() % 256;
     Tnum::new(rawa, (rawa & rawb) ^ rawb)
 }
 

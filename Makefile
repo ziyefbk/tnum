@@ -22,10 +22,6 @@ $(BUILD_DIR)/tnum.o: $(SRC_DIR)/tnum.c | $(BUILD_DIR)
 $(BUILD_DIR)/tnum_mul: $(SRC_DIR)/tnum_mul.c $(BUILD_DIR)/tnum.o | $(BUILD_DIR)
 	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
 
-# 编译compare.c
-$(BUILD_DIR)/compare: $(SRC_DIR)/compare.c | $(BUILD_DIR)
-	$(CC) $(CFLAGS) $^ -o $@ $(LDFLAGS)
-
 # 生成测试用例（运行test.rs）
 $(RUST_JSON):
 	cargo run --release --bin test_mul -- $(ITERATIONS) $(N)
@@ -43,9 +39,9 @@ c-test: $(BUILD_DIR)/tnum_mul rust-test
 	@echo "C_tnum_mul测试完成，生成结果：$(C_JSON)"
 
 # 比较结果
-compare-results: $(BUILD_DIR)/compare $(C_JSON)
+compare-results: $(C_JSON)
 	@echo "比较测试结果..."
-	$(BUILD_DIR)/compare $(C_JSON)
+	cargo run --release --bin compare -- $(C_JSON)
 	@echo "测试比较完成"
 
 # 清理

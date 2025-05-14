@@ -1,9 +1,9 @@
-use rand::Rng;
+use rand::{rng, Rng};
 use serde::{Deserialize, Serialize};
 use std::fs::File;
 use std::io::Write;
 use std::time::Instant;
-use tnum::tnum::{tnum_mul, tnum_mul_opt, tnum_mul_rec, xtnum_mul, Tnum};
+use tnum::tnum::{tnum_mul, tnum_mul_opt, xtnum_mul_high_top, xtnum_mul_top, Tnum};
 
 /// Tnum结构
 #[derive(Debug, Clone, Copy, Serialize, Deserialize)]
@@ -15,8 +15,6 @@ struct TestTnum {
 /// 包含原始输入、转换后的输入和结果
 #[derive(Debug, Serialize, Deserialize)]
 struct TestCase {
-    raw_input_a: u64,
-    raw_input_b: u64,
     input_a: TestTnum,
     input_b: TestTnum,
     results: Vec<MethodResult>,
@@ -28,7 +26,7 @@ struct MethodResult {
     method: String,
     output: TestTnum,
     avg_time_ns: f64,
-    correct: bool,
+    // correct: bool,
 }
 
 fn run_method_test(
@@ -37,7 +35,7 @@ fn run_method_test(
     a: Tnum,
     b: Tnum,
     iterations: usize,
-    base_output: Option<&TestTnum>,
+    // base_output: Option<&TestTnum>,
 ) -> MethodResult {
     let mut times = Vec::with_capacity(iterations);
     let mut result = None;
@@ -54,16 +52,19 @@ fn run_method_test(
         mask: result.mask(),
     };
 
-    let correct = base_output.map_or(true, |base| {
-        output.value == base.value && output.mask == base.mask
-    });
-
     MethodResult {
         method: method_name.to_string(),
         output,
         avg_time_ns: times.iter().sum::<u128>() as f64 / iterations as f64,
-        correct,
+        // correct,
     }
+}
+
+fn random_tnum() -> Tnum {
+    let mut rng = rng(); //random seed
+    let rawa: u64 = rng.random();
+    let rawb: u64 = rng.random();
+    Tnum::new(rawa, (rawa & rawb) ^ rawb)
 }
 
 fn main() {
@@ -81,72 +82,54 @@ fn main() {
         .parse()
         .unwrap_or(1000);
 
-    println!("开始测试 {} 个用例，每个用例重复 {} 次...", n, iterations);
+    println!(
+        "Start {} Test Cases，each one repeats {} times...",
+        n, iterations
+    );
     let mut test_cases = Vec::with_capacity(n);
-    
+
     // 用于统计的变量
-    let methods = ["基础乘法", "优化乘法", "扩展乘法", "递归乘法"];
+    let methods = [
+        "tnum_mul",
+        "tnum_mul_opt",
+        "xtnum_mul_top",
+        "xtnum_mul_high_top",
+    ];
     let mut total_times = vec![0.0; methods.len()];
-    let mut correct_counts = vec![0; methods.len()];
 
     for i in 0..n {
-        // 随机生成两个64位整数
-        let mut rng = rand::rng();
-        let raw_a: u64 = rng.random();
-        let raw_b: u64 = rng.random();
-
         // 生成Tnum对象
-        let a = Tnum::new(raw_a, (raw_a & raw_b) ^ raw_b);
-        let b = Tnum::new(raw_b, (raw_a & raw_b) ^ raw_a);
+        let a = random_tnum();
+        let b = random_tnum();
 
         let mut case_results = Vec::new();
 
-        // 首先运行基础乘法(对结果进行对拍)
-        let base_result = run_method_test("基础乘法", tnum_mul, a, b, iterations, None);
-        let base_output = base_result.output;
-        case_results.push(base_result);
 
         // 测试其他实现
         let implementations = vec![
-            ("优化乘法", tnum_mul_opt as fn(Tnum, Tnum) -> Tnum),
-            ("扩展乘法", |x, y| {
-                xtnum_mul(
-                    x,
-                    x.mask().count_ones() as u64,
-                    y,
-                    y.mask().count_ones() as u64,
-                    x.mask().count_ones() as u64 + y.mask().count_ones() as u64,
-                )
-            }),
-            ("递归乘法", tnum_mul_rec),
+            ("tnum_mul", tnum_mul as fn(Tnum, Tnum) -> Tnum),
+            ("tnum_mul_opt", tnum_mul_opt as fn(Tnum, Tnum) -> Tnum),
+            ("xtnum_mul_top", xtnum_mul_top),
+            ("xtnum_mul_high_top", xtnum_mul_high_top),
         ];
 
         for (name, func) in implementations {
-            case_results.push(run_method_test(name, func, a, b, iterations, Some(&base_output)));
+            case_results.push(run_method_test(
+                name,
+                func,
+                a,
+                b,
+                iterations,
+                // Some(&base_output),
+            ));
         }
 
         // 更新统计信息
         for (j, result) in case_results.iter().enumerate() {
             total_times[j] += result.avg_time_ns;
-            if result.correct {
-                correct_counts[j] += 1;
-            }
-        }
-
-        // 打印当前测试用例结果
-        println!("\n测试用例 {}/{}", i + 1, n);
-        for result in &case_results {
-            println!(
-                "  {}: {:.2} ns {}",
-                result.method,
-                result.avg_time_ns,
-                if result.correct { "✓" } else { "✗" }
-            );
         }
 
         test_cases.push(TestCase {
-            raw_input_a: raw_a,  
-            raw_input_b: raw_b,  
             input_a: TestTnum {
                 value: a.value(),
                 mask: a.mask(),
@@ -160,23 +143,19 @@ fn main() {
     }
 
     // 打印总体统计信息
-    println!("\n总体统计:");
-    println!("方法\t\t平均时间(ns)\t正确率");
+    println!("\nTotal:");
+    println!("function\t\t\t\t\taverage time(ns)\taccuracy");
     println!("----------------------------------------");
     for i in 0..methods.len() {
         let avg_time = total_times[i] / n as f64;
-        let accuracy = (correct_counts[i] as f64 / n as f64) * 100.0;
-        println!(
-            "{}\t{:.2}\t\t{:.1}%",
-            methods[i], avg_time, accuracy
-        );
+        println!("{:<30} {:<20.2}", methods[i], avg_time);
     }
 
     // 保存结果到 JSON 文件
     let json = serde_json::to_string_pretty(&test_cases).unwrap();
-    let output_file = "mul_test_results.json";
+    let output_file = "./build/rust_test_cases.json";
     let mut file = File::create(output_file).unwrap();
     file.write_all(json.as_bytes()).unwrap();
 
-    println!("\n详细结果已保存到：{}", output_file);
+    println!("\nAll info are stored in：{}", output_file);
 }

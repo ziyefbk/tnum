@@ -47,12 +47,12 @@ pub fn tnum_range(min: u64, max: u64) -> Tnum {
 
 /// tnum 的左移操作
 pub fn tnum_lshift(a: Tnum, shift: u8) -> Tnum {
-    Tnum::new(a.value << shift, a.mask << shift)
+    Tnum::new(a.value.wrapping_shl(shift as u32), a.mask.wrapping_shl(shift as u32))
 }
 
 /// tnum 的右移操作
 pub fn tnum_rshift(a: Tnum, shift: u8) -> Tnum {
-    Tnum::new(a.value >> shift, a.mask >> shift)
+    Tnum::new(a.value.wrapping_shr(shift as u32), a.mask.wrapping_shr(shift as u32))
 }
 
 /// tnum 算数右移的操作
@@ -76,14 +76,14 @@ pub fn tnum_arshift(a: Tnum, min_shift: u8, insn_bitness: u8) -> Tnum {
 /// tnum 的加法操作
 pub fn tnum_add(a: Tnum, b: Tnum) -> Tnum {
     // 计算掩码之和 - 表示两个不确定数的掩码组合
-    let sm = a.mask + b.mask;
+    let sm = a.mask.wrapping_add(b.mask);
 
     // 计算确定值之和
-    let sv = a.value + b.value;
+    let sv = a.value.wrapping_add(b.value);
 
     // sigma = (a.mask + b.mask) + (a.value + b.value)
     // 用于检测进位传播情况
-    let sigma = sm + sv;
+    let sigma = sm.wrapping_add(sv);
 
     // chi = 进位传播位图
     // 通过异或操作找出哪些位发生了进位
@@ -103,9 +103,9 @@ pub fn tnum_add(a: Tnum, b: Tnum) -> Tnum {
 
 /// tnum 的减法操作
 pub fn tnum_sub(a: Tnum, b: Tnum) -> Tnum {
-    let dv = a.value - b.value;
-    let alpha = dv + a.mask;
-    let beta = dv - b.mask;
+    let dv = a.value.wrapping_sub(b.value);
+    let alpha = dv.wrapping_add(a.mask);
+    let beta = dv.wrapping_sub(b.mask);
     let chi = alpha ^ beta;
     let mu = chi | a.mask | b.mask;
     Tnum::new(dv & !mu, mu)
@@ -138,7 +138,7 @@ pub fn tnum_xor(a: Tnum, b: Tnum) -> Tnum {
 
 /// tnum 的乘法操作
 pub fn tnum_mul(mut a: Tnum, mut b: Tnum) -> Tnum {
-    let acc_v = a.value * b.value;
+    let acc_v = a.value.wrapping_mul(b.value);
     let mut acc_m: Tnum = Tnum::new(0, 0);
     while (a.value != 0) || (a.mask != 0) {
         if (a.value & 1) != 0 {
@@ -195,13 +195,13 @@ fn split_at_mu (x:Tnum) -> (Tnum, u32 , Tnum) {
 /// which has [j] unknown bits and [n] is the fuel (Z.of_nat n = j).
 fn tnum_mul_const (c:u64, x:Tnum, n:u64) -> Tnum {
     if n == 0 {
-        Tnum::new(c * x.value, 0)
+        Tnum::new(c.wrapping_mul(x.value), 0)
     } else {
         let (y1,i1,y2) = split_at_mu(x);
         let p = tnum_mul_const(c,y1,n-1);
-        let mc = Tnum::new(c * y2.mask,0);
+        let mc = Tnum::new(c.wrapping_mul(y2.mask),0);
         let mu0 = tnum_add(tnum_lshift(p, (i1+1) as u8), mc);
-        let mu1 = tnum_add(mu0, Tnum::new(c<<i1,0));
+        let mu1 = tnum_add(mu0, Tnum::new(c.wrapping_shl(i1),0));
            tnum_join(mu0, mu1)
     }
 
@@ -278,7 +278,7 @@ fn testbit(num: u64, pos: u8) -> bool {
 /// We also have that x <= y and 0 <= x and 0 <= y
 fn xtnum_mul_high (x: Tnum, y: Tnum, n: u8) -> Tnum {
     if x.mask == 0 && y.mask == 0 { //if both are constants, perform normal multiplication
-        Tnum::new(x.value * y.value, 0)
+        Tnum::new(x.value.wrapping_mul(y.value), 0)
     } else if n == 0 {
         //panic!("should not happen");
         Tnum::new(0, 0) //should not happen

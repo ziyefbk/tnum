@@ -2,376 +2,56 @@
   {
     "case_number": 1,
     "input_a": {
-      "value": 241,
-      "mask": 8
+      "value": 202,
+      "mask": 48
     },
     "input_b": {
-      "value": 211,
-      "mask": 4
+      "value": 29,
+      "mask": 0
     },
     "c_output": {
-      "value": 49155,
-      "mask": 16380
+      "value": 4098,
+      "mask": 4080
     },
     "rust_output": {
       "value": 0,
-      "mask": 524287
+      "mask": 131071
     },
     "method": "xtnum_mul_top"
   },
   {
     "case_number": 1,
     "input_a": {
-      "value": 241,
-      "mask": 8
+      "value": 202,
+      "mask": 48
     },
     "input_b": {
-      "value": 211,
-      "mask": 4
+      "value": 29,
+      "mask": 0
     },
     "c_output": {
-      "value": 49155,
-      "mask": 16380
+      "value": 4098,
+      "mask": 4080
     },
     "rust_output": {
-      "value": 3,
-      "mask": 65532
+      "value": 2,
+      "mask": 8176
     },
     "method": "xtnum_mul_high_top"
   },
   {
     "case_number": 2,
     "input_a": {
-      "value": 2,
-      "mask": 137
+      "value": 183,
+      "mask": 64
     },
     "input_b": {
-      "value": 59,
-      "mask": 132
+      "value": 19,
+      "mask": 72
     },
     "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 3,
-    "input_a": {
-      "value": 144,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 64,
-      "mask": 185
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65529
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 4,
-    "input_a": {
-      "value": 199,
-      "mask": 16
-    },
-    "input_b": {
-      "value": 89,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 16431,
-      "mask": 3984
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 4,
-    "input_a": {
-      "value": 199,
-      "mask": 16
-    },
-    "input_b": {
-      "value": 89,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 16431,
-      "mask": 3984
-    },
-    "rust_output": {
-      "value": 15,
-      "mask": 32752
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 5,
-    "input_a": {
-      "value": 30,
-      "mask": 161
-    },
-    "input_b": {
-      "value": 48,
-      "mask": 7
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 2097151
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 5,
-    "input_a": {
-      "value": 30,
-      "mask": 161
-    },
-    "input_b": {
-      "value": 48,
-      "mask": 7
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16383
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 6,
-    "input_a": {
-      "value": 238,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 215,
-      "mask": 40
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 2097151
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 6,
-    "input_a": {
-      "value": 238,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 215,
-      "mask": 40
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 7,
-    "input_a": {
-      "value": 16,
-      "mask": 225
-    },
-    "input_b": {
-      "value": 83,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65531
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8388607
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 7,
-    "input_a": {
-      "value": 16,
-      "mask": 225
-    },
-    "input_b": {
-      "value": 83,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65531
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32763
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 8,
-    "input_a": {
-      "value": 165,
-      "mask": 10
-    },
-    "input_b": {
-      "value": 204,
-      "mask": 19
-    },
-    "c_output": {
-      "value": 32768,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777215
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 8,
-    "input_a": {
-      "value": 165,
-      "mask": 10
-    },
-    "input_b": {
-      "value": 204,
-      "mask": 19
-    },
-    "c_output": {
-      "value": 32768,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 9,
-    "input_a": {
-      "value": 95,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 253,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 23553,
-      "mask": 1022
-    },
-    "rust_output": {
-      "value": 16384,
-      "mask": 16383
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 9,
-    "input_a": {
-      "value": 95,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 253,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 23553,
-      "mask": 1022
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 32766
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 10,
-    "input_a": {
-      "value": 43,
-      "mask": 68
-    },
-    "input_b": {
-      "value": 23,
-      "mask": 96
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 32764
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777215
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 10,
-    "input_a": {
-      "value": 43,
-      "mask": 68
-    },
-    "input_b": {
-      "value": 23,
-      "mask": 96
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 32764
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 16380
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 11,
-    "input_a": {
-      "value": 195,
-      "mask": 16
-    },
-    "input_b": {
-      "value": 174,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 32778,
-      "mask": 32752
+      "value": 5,
+      "mask": 65528
     },
     "rust_output": {
       "value": 0,
@@ -380,338 +60,38 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 11,
+    "case_number": 2,
     "input_a": {
-      "value": 195,
-      "mask": 16
+      "value": 183,
+      "mask": 64
     },
     "input_b": {
-      "value": 174,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 32778,
-      "mask": 32752
-    },
-    "rust_output": {
-      "value": 10,
-      "mask": 65520
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 12,
-    "input_a": {
-      "value": 148,
-      "mask": 106
-    },
-    "input_b": {
-      "value": 22,
+      "value": 19,
       "mask": 72
     },
     "c_output": {
-      "value": 0,
-      "mask": 65532
+      "value": 5,
+      "mask": 65528
     },
     "rust_output": {
-      "value": 0,
-      "mask": 33554430
+      "value": 5,
+      "mask": 32760
     },
-    "method": "xtnum_mul_top"
+    "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 12,
+    "case_number": 3,
     "input_a": {
-      "value": 148,
-      "mask": 106
-    },
-    "input_b": {
-      "value": 22,
+      "value": 183,
       "mask": 72
     },
-    "c_output": {
-      "value": 0,
-      "mask": 65532
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32764
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 13,
-    "input_a": {
-      "value": 117,
-      "mask": 0
-    },
     "input_b": {
-      "value": 254,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 29698,
-      "mask": 253
-    },
-    "rust_output": {
-      "value": 29698,
-      "mask": 157
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 13,
-    "input_a": {
-      "value": 117,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 254,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 29698,
-      "mask": 253
-    },
-    "rust_output": {
-      "value": 2,
-      "mask": 32765
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 14,
-    "input_a": {
-      "value": 167,
-      "mask": 80
-    },
-    "input_b": {
-      "value": 144,
-      "mask": 47
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 14,
-    "input_a": {
-      "value": 167,
-      "mask": 80
-    },
-    "input_b": {
-      "value": 144,
-      "mask": 47
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 15,
-    "input_a": {
-      "value": 74,
-      "mask": 144
-    },
-    "input_b": {
-      "value": 219,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 6,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777215
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 15,
-    "input_a": {
-      "value": 74,
-      "mask": 144
-    },
-    "input_b": {
-      "value": 219,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 6,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 6,
-      "mask": 65528
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 16,
-    "input_a": {
-      "value": 74,
-      "mask": 148
-    },
-    "input_b": {
-      "value": 166,
+      "value": 131,
       "mask": 16
     },
     "c_output": {
-      "value": 4,
+      "value": 5,
       "mask": 65528
-    },
-    "rust_output": {
-      "value": 4,
-      "mask": 131064
-    },
-    "method": "tnum_mul_opt"
-  },
-  {
-    "case_number": 16,
-    "input_a": {
-      "value": 74,
-      "mask": 148
-    },
-    "input_b": {
-      "value": 166,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 65528
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108862
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 17,
-    "input_a": {
-      "value": 50,
-      "mask": 200
-    },
-    "input_b": {
-      "value": 17,
-      "mask": 164
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435454
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 17,
-    "input_a": {
-      "value": 50,
-      "mask": 200
-    },
-    "input_b": {
-      "value": 17,
-      "mask": 164
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 2,
-      "mask": 65528
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 18,
-    "input_a": {
-      "value": 200,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 136,
-      "mask": 36
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65516
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 19,
-    "input_a": {
-      "value": 10,
-      "mask": 84
-    },
-    "input_b": {
-      "value": 113,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 42,
-      "mask": 32724
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 524287
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 19,
-    "input_a": {
-      "value": 10,
-      "mask": 84
-    },
-    "input_b": {
-      "value": 113,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 42,
-      "mask": 32724
-    },
-    "rust_output": {
-      "value": 42,
-      "mask": 16340
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 20,
-    "input_a": {
-      "value": 201,
-      "mask": 6
-    },
-    "input_b": {
-      "value": 64,
-      "mask": 142
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
     },
     "rust_output": {
       "value": 0,
@@ -720,538 +100,58 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 20,
+    "case_number": 4,
     "input_a": {
-      "value": 201,
-      "mask": 6
+      "value": 80,
+      "mask": 33
     },
     "input_b": {
-      "value": 64,
-      "mask": 142
+      "value": 218,
+      "mask": 37
     },
     "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 21,
-    "input_a": {
-      "value": 192,
-      "mask": 12
-    },
-    "input_b": {
-      "value": 104,
-      "mask": 129
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131052
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777212
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 21,
-    "input_a": {
-      "value": 192,
-      "mask": 12
-    },
-    "input_b": {
-      "value": 104,
-      "mask": 129
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131052
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65516
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 22,
-    "input_a": {
-      "value": 207,
-      "mask": 48
-    },
-    "input_b": {
-      "value": 102,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 65528
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8388606
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 22,
-    "input_a": {
-      "value": 207,
-      "mask": 48
-    },
-    "input_b": {
-      "value": 102,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 65528
-    },
-    "rust_output": {
-      "value": 18,
-      "mask": 32744
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 23,
-    "input_a": {
-      "value": 29,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 16,
-      "mask": 15
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 1023
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8191
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 24,
-    "input_a": {
-      "value": 27,
-      "mask": 160
-    },
-    "input_b": {
-      "value": 91,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 25,
-      "mask": 131040
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 134217727
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 24,
-    "input_a": {
-      "value": 27,
-      "mask": 160
-    },
-    "input_b": {
-      "value": 91,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 25,
-      "mask": 131040
-    },
-    "rust_output": {
-      "value": 25,
-      "mask": 65504
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 25,
-    "input_a": {
-      "value": 57,
-      "mask": 128
-    },
-    "input_b": {
-      "value": 124,
-      "mask": 129
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 131065
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 134217725
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 25,
-    "input_a": {
-      "value": 57,
-      "mask": 128
-    },
-    "input_b": {
-      "value": 124,
-      "mask": 129
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 131065
-    },
-    "rust_output": {
-      "value": 4,
-      "mask": 65529
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 26,
-    "input_a": {
-      "value": 83,
-      "mask": 172
-    },
-    "input_b": {
-      "value": 183,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777215
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 26,
-    "input_a": {
-      "value": 83,
-      "mask": 172
-    },
-    "input_b": {
-      "value": 183,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65532
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 27,
-    "input_a": {
-      "value": 107,
-      "mask": 144
-    },
-    "input_b": {
-      "value": 53,
-      "mask": 130
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435455
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 27,
-    "input_a": {
-      "value": 107,
-      "mask": 144
-    },
-    "input_b": {
-      "value": 53,
-      "mask": 130
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 28,
-    "input_a": {
-      "value": 113,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 68,
-      "mask": 171
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 65531
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 2097151
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 28,
-    "input_a": {
-      "value": 113,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 68,
-      "mask": 171
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 65531
-    },
-    "rust_output": {
-      "value": 4,
-      "mask": 32763
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 29,
-    "input_a": {
-      "value": 115,
-      "mask": 136
-    },
-    "input_b": {
-      "value": 105,
-      "mask": 134
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435455
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 29,
-    "input_a": {
-      "value": 115,
-      "mask": 136
-    },
-    "input_b": {
-      "value": 105,
-      "mask": 134
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 30,
-    "input_a": {
-      "value": 142,
-      "mask": 49
-    },
-    "input_b": {
-      "value": 53,
-      "mask": 138
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 30,
-    "input_a": {
-      "value": 142,
-      "mask": 49
-    },
-    "input_b": {
-      "value": 53,
-      "mask": 138
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
       "value": 0,
       "mask": 65535
     },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 31,
-    "input_a": {
-      "value": 171,
-      "mask": 20
-    },
-    "input_b": {
-      "value": 93,
-      "mask": 160
-    },
-    "c_output": {
-      "value": 3,
-      "mask": 131068
-    },
     "rust_output": {
       "value": 0,
-      "mask": 67108863
+      "mask": 33554431
     },
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 31,
+    "case_number": 4,
     "input_a": {
-      "value": 171,
-      "mask": 20
+      "value": 80,
+      "mask": 33
     },
     "input_b": {
-      "value": 93,
-      "mask": 160
+      "value": 218,
+      "mask": 37
     },
     "c_output": {
-      "value": 3,
-      "mask": 131068
+      "value": 0,
+      "mask": 65535
     },
     "rust_output": {
-      "value": 3,
-      "mask": 65532
+      "value": 0,
+      "mask": 32767
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 32,
+    "case_number": 5,
     "input_a": {
-      "value": 140,
-      "mask": 32
+      "value": 33,
+      "mask": 128
     },
     "input_b": {
-      "value": 142,
-      "mask": 17
+      "value": 169,
+      "mask": 2
     },
     "c_output": {
-      "value": 0,
-      "mask": 65532
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8388607
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 32,
-    "input_a": {
-      "value": 140,
-      "mask": 32
-    },
-    "input_b": {
-      "value": 142,
-      "mask": 17
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65532
-    },
-    "rust_output": {
-      "value": 16384,
-      "mask": 16380
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 33,
-    "input_a": {
-      "value": 208,
-      "mask": 32
-    },
-    "input_b": {
-      "value": 10,
-      "mask": 229
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131056
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108856
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 33,
-    "input_a": {
-      "value": 208,
-      "mask": 32
-    },
-    "input_b": {
-      "value": 10,
-      "mask": 229
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131056
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65520
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 34,
-    "input_a": {
-      "value": 69,
-      "mask": 176
-    },
-    "input_b": {
-      "value": 191,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 11,
-      "mask": 131056
+      "value": 9,
+      "mask": 32706
     },
     "rust_output": {
       "value": 0,
@@ -1260,78 +160,18 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 34,
+    "case_number": 6,
     "input_a": {
-      "value": 69,
-      "mask": 176
+      "value": 214,
+      "mask": 41
     },
     "input_b": {
-      "value": 191,
-      "mask": 0
+      "value": 239,
+      "mask": 16
     },
     "c_output": {
-      "value": 11,
-      "mask": 131056
-    },
-    "rust_output": {
-      "value": 11,
-      "mask": 65520
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 35,
-    "input_a": {
-      "value": 85,
-      "mask": 32
-    },
-    "input_b": {
-      "value": 27,
-      "mask": 36
-    },
-    "c_output": {
-      "value": 3,
-      "mask": 16380
-    },
-    "rust_output": {
       "value": 0,
-      "mask": 2097151
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 35,
-    "input_a": {
-      "value": 85,
-      "mask": 32
-    },
-    "input_b": {
-      "value": 27,
-      "mask": 36
-    },
-    "c_output": {
-      "value": 3,
-      "mask": 16380
-    },
-    "rust_output": {
-      "value": 3,
-      "mask": 8188
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 36,
-    "input_a": {
-      "value": 50,
-      "mask": 140
-    },
-    "input_b": {
-      "value": 85,
-      "mask": 34
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 65532
+      "mask": 131071
     },
     "rust_output": {
       "value": 0,
@@ -1340,38 +180,198 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 36,
+    "case_number": 6,
     "input_a": {
-      "value": 50,
-      "mask": 140
+      "value": 214,
+      "mask": 41
     },
     "input_b": {
-      "value": 85,
-      "mask": 34
+      "value": 239,
+      "mask": 16
     },
     "c_output": {
-      "value": 2,
-      "mask": 65532
+      "value": 0,
+      "mask": 131071
     },
     "rust_output": {
-      "value": 2,
-      "mask": 32764
+      "value": 0,
+      "mask": 65535
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 37,
+    "case_number": 7,
     "input_a": {
-      "value": 34,
-      "mask": 193
+      "value": 176,
+      "mask": 67
     },
     "input_b": {
-      "value": 127,
-      "mask": 0
+      "value": 231,
+      "mask": 8
     },
     "c_output": {
       "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 33554431
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 7,
+    "input_a": {
+      "value": 176,
+      "mask": 67
+    },
+    "input_b": {
+      "value": 231,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
       "mask": 65535
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 8,
+    "input_a": {
+      "value": 15,
+      "mask": 160
+    },
+    "input_b": {
+      "value": 21,
+      "mask": 106
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 33554431
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 8,
+    "input_a": {
+      "value": 15,
+      "mask": 160
+    },
+    "input_b": {
+      "value": 21,
+      "mask": 106
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 1,
+      "mask": 32766
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 9,
+    "input_a": {
+      "value": 191,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 92,
+      "mask": 34
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108862
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 9,
+    "input_a": {
+      "value": 191,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 92,
+      "mask": 34
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 10,
+    "input_a": {
+      "value": 250,
+      "mask": 4
+    },
+    "input_b": {
+      "value": 221,
+      "mask": 32
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8388606
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 10,
+    "input_a": {
+      "value": 250,
+      "mask": 4
+    },
+    "input_b": {
+      "value": 221,
+      "mask": 32
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65524
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 11,
+    "input_a": {
+      "value": 19,
+      "mask": 132
+    },
+    "input_b": {
+      "value": 108,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
     },
     "rust_output": {
       "value": 0,
@@ -1380,34 +380,334 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 37,
+    "case_number": 12,
     "input_a": {
-      "value": 34,
-      "mask": 193
+      "value": 190,
+      "mask": 65
     },
     "input_b": {
-      "value": 127,
-      "mask": 0
+      "value": 146,
+      "mask": 65
     },
     "c_output": {
       "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 12,
+    "input_a": {
+      "value": 190,
+      "mask": 65
+    },
+    "input_b": {
+      "value": 146,
+      "mask": 65
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
       "mask": 65535
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 13,
+    "input_a": {
+      "value": 88,
+      "mask": 164
+    },
+    "input_b": {
+      "value": 189,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 13,
+    "input_a": {
+      "value": 88,
+      "mask": 164
+    },
+    "input_b": {
+      "value": 189,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 8,
+      "mask": 65524
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 14,
+    "input_a": {
+      "value": 123,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 123,
+      "mask": 132
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65532
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 2097151
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 14,
+    "input_a": {
+      "value": 123,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 123,
+      "mask": 132
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65532
+    },
+    "rust_output": {
+      "value": 1,
+      "mask": 32764
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 16,
+    "input_a": {
+      "value": 92,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 232,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 16384,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 16,
+    "input_a": {
+      "value": 92,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 232,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 16384,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32764
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 17,
+    "input_a": {
+      "value": 215,
+      "mask": 32
+    },
+    "input_b": {
+      "value": 152,
+      "mask": 34
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 18,
+    "input_a": {
+      "value": 85,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 190,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 22,
+      "mask": 32576
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048575
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 19,
+    "input_a": {
+      "value": 56,
+      "mask": 3
+    },
+    "input_b": {
+      "value": 125,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
     },
     "rust_output": {
       "value": 0,
       "mask": 32767
     },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 19,
+    "input_a": {
+      "value": 56,
+      "mask": 3
+    },
+    "input_b": {
+      "value": 125,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8191
+    },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 38,
+    "case_number": 20,
     "input_a": {
-      "value": 84,
-      "mask": 170
+      "value": 202,
+      "mask": 4
     },
     "input_b": {
-      "value": 105,
-      "mask": 130
+      "value": 183,
+      "mask": 0
+    },
+    "c_output": {
+      "value": 36866,
+      "mask": 1020
+    },
+    "rust_output": {
+      "value": 32768,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 20,
+    "input_a": {
+      "value": 202,
+      "mask": 4
+    },
+    "input_b": {
+      "value": 183,
+      "mask": 0
+    },
+    "c_output": {
+      "value": 36866,
+      "mask": 1020
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65524
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 21,
+    "input_a": {
+      "value": 250,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 250,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 61444,
+      "mask": 4072
+    },
+    "rust_output": {
+      "value": 61440,
+      "mask": 4094
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 21,
+    "input_a": {
+      "value": 250,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 250,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 61444,
+      "mask": 4072
+    },
+    "rust_output": {
+      "value": 4,
+      "mask": 65512
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 22,
+    "input_a": {
+      "value": 124,
+      "mask": 131
+    },
+    "input_b": {
+      "value": 212,
+      "mask": 10
     },
     "c_output": {
       "value": 0,
@@ -1415,19 +715,19 @@
     },
     "rust_output": {
       "value": 0,
-      "mask": 268435454
+      "mask": 16777214
     },
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 38,
+    "case_number": 22,
     "input_a": {
-      "value": 84,
-      "mask": 170
+      "value": 124,
+      "mask": 131
     },
     "input_b": {
-      "value": 105,
-      "mask": 130
+      "value": 212,
+      "mask": 10
     },
     "c_output": {
       "value": 0,
@@ -1440,14 +740,134 @@
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 39,
+    "case_number": 23,
     "input_a": {
-      "value": 101,
-      "mask": 152
+      "value": 2,
+      "mask": 64
     },
     "input_b": {
-      "value": 204,
+      "value": 114,
+      "mask": 5
+    },
+    "c_output": {
+      "value": 36,
+      "mask": 8138
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048575
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 23,
+    "input_a": {
+      "value": 2,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 114,
+      "mask": 5
+    },
+    "c_output": {
+      "value": 36,
+      "mask": 8138
+    },
+    "rust_output": {
+      "value": 36,
+      "mask": 16330
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 24,
+    "input_a": {
+      "value": 187,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 66,
+      "mask": 140
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65532
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 24,
+    "input_a": {
+      "value": 187,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 66,
+      "mask": 140
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 24,
+    "input_a": {
+      "value": 187,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 66,
+      "mask": 140
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 25,
+    "input_a": {
+      "value": 145,
+      "mask": 4
+    },
+    "input_b": {
+      "value": 54,
+      "mask": 65
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 32765
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048575
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 26,
+    "input_a": {
+      "value": 200,
       "mask": 51
+    },
+    "input_b": {
+      "value": 56,
+      "mask": 133
     },
     "c_output": {
       "value": 0,
@@ -1460,14 +880,14 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 39,
+    "case_number": 26,
     "input_a": {
-      "value": 101,
-      "mask": 152
+      "value": 200,
+      "mask": 51
     },
     "input_b": {
-      "value": 204,
-      "mask": 51
+      "value": 56,
+      "mask": 133
     },
     "c_output": {
       "value": 0,
@@ -1480,14 +900,174 @@
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 40,
+    "case_number": 27,
     "input_a": {
-      "value": 132,
-      "mask": 81
+      "value": 156,
+      "mask": 3
     },
     "input_b": {
-      "value": 152,
-      "mask": 101
+      "value": 199,
+      "mask": 32
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 28,
+    "input_a": {
+      "value": 15,
+      "mask": 48
+    },
+    "input_b": {
+      "value": 110,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 28,
+    "input_a": {
+      "value": 15,
+      "mask": 48
+    },
+    "input_b": {
+      "value": 110,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8191
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 29,
+    "input_a": {
+      "value": 147,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 73,
+      "mask": 166
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8388607
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 30,
+    "input_a": {
+      "value": 159,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 2,
+      "mask": 249
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 30,
+    "input_a": {
+      "value": 159,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 2,
+      "mask": 249
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 31,
+    "input_a": {
+      "value": 97,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 159,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 15,
+      "mask": 65520
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 33554431
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 31,
+    "input_a": {
+      "value": 97,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 159,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 15,
+      "mask": 65520
+    },
+    "rust_output": {
+      "value": 15,
+      "mask": 32752
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 32,
+    "input_a": {
+      "value": 156,
+      "mask": 97
+    },
+    "input_b": {
+      "value": 224,
+      "mask": 21
     },
     "c_output": {
       "value": 0,
@@ -1495,19 +1075,19 @@
     },
     "rust_output": {
       "value": 0,
-      "mask": 268435453
+      "mask": 67108863
     },
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 40,
+    "case_number": 32,
     "input_a": {
-      "value": 132,
-      "mask": 81
+      "value": 156,
+      "mask": 97
     },
     "input_b": {
-      "value": 152,
-      "mask": 101
+      "value": 224,
+      "mask": 21
     },
     "c_output": {
       "value": 0,
@@ -1520,598 +1100,18 @@
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 41,
+    "case_number": 33,
     "input_a": {
-      "value": 193,
-      "mask": 62
+      "value": 87,
+      "mask": 168
     },
     "input_b": {
-      "value": 127,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 41,
-    "input_a": {
-      "value": 193,
-      "mask": 62
-    },
-    "input_b": {
-      "value": 127,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 42,
-    "input_a": {
-      "value": 93,
-      "mask": 2
-    },
-    "input_b": {
-      "value": 228,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 20480,
-      "mask": 4094
-    },
-    "rust_output": {
-      "value": 16384,
-      "mask": 16383
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 42,
-    "input_a": {
-      "value": 93,
-      "mask": 2
-    },
-    "input_b": {
-      "value": 228,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 20480,
-      "mask": 4094
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32766
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 43,
-    "input_a": {
-      "value": 24,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 68,
-      "mask": 17
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 4093
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 44,
-    "input_a": {
-      "value": 219,
-      "mask": 36
-    },
-    "input_b": {
-      "value": 189,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 32771,
-      "mask": 32764
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 524287
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 44,
-    "input_a": {
-      "value": 219,
-      "mask": 36
-    },
-    "input_b": {
-      "value": 189,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 32771,
-      "mask": 32764
-    },
-    "rust_output": {
-      "value": 3,
-      "mask": 65532
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 45,
-    "input_a": {
-      "value": 97,
-      "mask": 154
-    },
-    "input_b": {
-      "value": 237,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 45,
-    "input_a": {
-      "value": 97,
-      "mask": 154
-    },
-    "input_b": {
-      "value": 237,
-      "mask": 2
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 46,
-    "input_a": {
-      "value": 105,
-      "mask": 2
-    },
-    "input_b": {
-      "value": 47,
-      "mask": 64
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 16382
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 524287
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 46,
-    "input_a": {
-      "value": 105,
-      "mask": 2
-    },
-    "input_b": {
-      "value": 47,
-      "mask": 64
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 16382
-    },
-    "rust_output": {
-      "value": 5,
-      "mask": 16378
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 47,
-    "input_a": {
-      "value": 142,
-      "mask": 33
-    },
-    "input_b": {
-      "value": 73,
-      "mask": 20
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 32765
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 48,
-    "input_a": {
-      "value": 80,
-      "mask": 132
-    },
-    "input_b": {
-      "value": 209,
+      "value": 206,
       "mask": 32
     },
     "c_output": {
-      "value": 16,
-      "mask": 131012
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108855
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 48,
-    "input_a": {
-      "value": 80,
-      "mask": 132
-    },
-    "input_b": {
-      "value": 209,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 16,
-      "mask": 131012
-    },
-    "rust_output": {
-      "value": 16,
-      "mask": 65476
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 49,
-    "input_a": {
-      "value": 76,
-      "mask": 161
-    },
-    "input_b": {
-      "value": 44,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32765
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 49,
-    "input_a": {
-      "value": 76,
-      "mask": 161
-    },
-    "input_b": {
-      "value": 44,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32765
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16381
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 50,
-    "input_a": {
-      "value": 204,
-      "mask": 48
-    },
-    "input_b": {
-      "value": 228,
-      "mask": 26
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 33554430
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 50,
-    "input_a": {
-      "value": 204,
-      "mask": 48
-    },
-    "input_b": {
-      "value": 228,
-      "mask": 26
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65528
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 51,
-    "input_a": {
-      "value": 179,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 48,
-      "mask": 78
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32766
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 52,
-    "input_a": {
-      "value": 57,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 6,
-      "mask": 192
-    },
-    "c_output": {
       "value": 2,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 134217727
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 52,
-    "input_a": {
-      "value": 57,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 6,
-      "mask": 192
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 2,
-      "mask": 65532
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 53,
-    "input_a": {
-      "value": 137,
-      "mask": 50
-    },
-    "input_b": {
-      "value": 94,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 524287
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 54,
-    "input_a": {
-      "value": 29,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 161,
-      "mask": 68
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 134217727
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 54,
-    "input_a": {
-      "value": 29,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 161,
-      "mask": 68
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 55,
-    "input_a": {
-      "value": 143,
-      "mask": 80
-    },
-    "input_b": {
-      "value": 129,
-      "mask": 72
-    },
-    "c_output": {
-      "value": 7,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 7,
-      "mask": 65528
-    },
-    "method": "tnum_mul_opt"
-  },
-  {
-    "case_number": 55,
-    "input_a": {
-      "value": 143,
-      "mask": 80
-    },
-    "input_b": {
-      "value": 129,
-      "mask": 72
-    },
-    "c_output": {
-      "value": 7,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435455
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 55,
-    "input_a": {
-      "value": 143,
-      "mask": 80
-    },
-    "input_b": {
-      "value": 129,
-      "mask": 72
-    },
-    "c_output": {
-      "value": 7,
-      "mask": 131064
-    },
-    "rust_output": {
-      "value": 7,
-      "mask": 65528
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 56,
-    "input_a": {
-      "value": 52,
-      "mask": 73
-    },
-    "input_b": {
-      "value": 251,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 56,
-    "input_a": {
-      "value": 52,
-      "mask": 73
-    },
-    "input_b": {
-      "value": 251,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 57,
-    "input_a": {
-      "value": 60,
-      "mask": 66
-    },
-    "input_b": {
-      "value": 52,
-      "mask": 192
-    },
-    "c_output": {
-      "value": 16,
-      "mask": 65512
+      "mask": 131056
     },
     "rust_output": {
       "value": 0,
@@ -2120,38 +1120,218 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 57,
+    "case_number": 33,
     "input_a": {
-      "value": 60,
-      "mask": 66
+      "value": 87,
+      "mask": 168
     },
     "input_b": {
-      "value": 52,
-      "mask": 192
+      "value": 206,
+      "mask": 32
     },
     "c_output": {
-      "value": 16,
-      "mask": 65512
+      "value": 2,
+      "mask": 131056
     },
     "rust_output": {
-      "value": 16,
-      "mask": 32744
+      "value": 2,
+      "mask": 65520
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 58,
+    "case_number": 34,
     "input_a": {
-      "value": 27,
-      "mask": 196
+      "value": 194,
+      "mask": 1
     },
     "input_b": {
-      "value": 18,
-      "mask": 4
+      "value": 230,
+      "mask": 24
+    },
+    "c_output": {
+      "value": 32768,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 524287
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 34,
+    "input_a": {
+      "value": 194,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 230,
+      "mask": 24
+    },
+    "c_output": {
+      "value": 32768,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 35,
+    "input_a": {
+      "value": 89,
+      "mask": 128
+    },
+    "input_b": {
+      "value": 130,
+      "mask": 80
     },
     "c_output": {
       "value": 2,
-      "mask": 16380
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435454
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 35,
+    "input_a": {
+      "value": 89,
+      "mask": 128
+    },
+    "input_b": {
+      "value": 130,
+      "mask": 80
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65520
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 36,
+    "input_a": {
+      "value": 181,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 52,
+      "mask": 67
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048575
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 37,
+    "input_a": {
+      "value": 239,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 185,
+      "mask": 68
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 37,
+    "input_a": {
+      "value": 239,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 185,
+      "mask": 68
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 38,
+    "input_a": {
+      "value": 4,
+      "mask": 27
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 11
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 262143
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 38,
+    "input_a": {
+      "value": 4,
+      "mask": 27
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 11
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8191
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 39,
+    "input_a": {
+      "value": 168,
+      "mask": 87
+    },
+    "input_b": {
+      "value": 78,
+      "mask": 0
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32766
     },
     "rust_output": {
       "value": 0,
@@ -2160,158 +1340,258 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 58,
+    "case_number": 40,
     "input_a": {
-      "value": 27,
-      "mask": 196
+      "value": 141,
+      "mask": 80
     },
     "input_b": {
-      "value": 18,
-      "mask": 4
+      "value": 15,
+      "mask": 192
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 40,
+    "input_a": {
+      "value": 141,
+      "mask": 80
+    },
+    "input_b": {
+      "value": 15,
+      "mask": 192
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 65520
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 41,
+    "input_a": {
+      "value": 78,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 6,
+      "mask": 113
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194302
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 41,
+    "input_a": {
+      "value": 78,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 6,
+      "mask": 113
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16382
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 42,
+    "input_a": {
+      "value": 185,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 82,
+      "mask": 41
     },
     "c_output": {
       "value": 2,
-      "mask": 16380
+      "mask": 65529
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 42,
+    "input_a": {
+      "value": 185,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 82,
+      "mask": 41
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 65529
     },
     "rust_output": {
       "value": 2,
+      "mask": 32761
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 43,
+    "input_a": {
+      "value": 222,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 231,
+      "mask": 24
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 524287
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 43,
+    "input_a": {
+      "value": 222,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 231,
+      "mask": 24
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 44,
+    "input_a": {
+      "value": 43,
+      "mask": 132
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 16,
+      "mask": 131008
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 134217724
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 44,
+    "input_a": {
+      "value": 43,
+      "mask": 132
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 16,
+      "mask": 131008
+    },
+    "rust_output": {
+      "value": 16,
+      "mask": 65472
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 45,
+    "input_a": {
+      "value": 17,
+      "mask": 44
+    },
+    "input_b": {
+      "value": 13,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 45,
+    "input_a": {
+      "value": 17,
+      "mask": 44
+    },
+    "input_b": {
+      "value": 13,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 1,
       "mask": 8188
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 59,
+    "case_number": 46,
     "input_a": {
-      "value": 230,
-      "mask": 25
+      "value": 39,
+      "mask": 8
     },
     "input_b": {
-      "value": 166,
-      "mask": 80
+      "value": 12,
+      "mask": 131
     },
     "c_output": {
       "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 59,
-    "input_a": {
-      "value": 230,
-      "mask": 25
-    },
-    "input_b": {
-      "value": 166,
-      "mask": 80
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 60,
-    "input_a": {
-      "value": 91,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 109,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 8207,
-      "mask": 4080
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 60,
-    "input_a": {
-      "value": 91,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 109,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 8207,
-      "mask": 4080
-    },
-    "rust_output": {
-      "value": 47,
-      "mask": 16336
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 61,
-    "input_a": {
-      "value": 76,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 219,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 16388,
-      "mask": 4091
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 61,
-    "input_a": {
-      "value": 76,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 219,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 16388,
-      "mask": 4091
-    },
-    "rust_output": {
-      "value": 4,
-      "mask": 32763
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 62,
-    "input_a": {
-      "value": 231,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 55,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 33,
-      "mask": 63360
+      "mask": 32767
     },
     "rust_output": {
       "value": 0,
@@ -2320,318 +1600,78 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 62,
+    "case_number": 46,
     "input_a": {
-      "value": 231,
-      "mask": 0
+      "value": 39,
+      "mask": 8
     },
     "input_b": {
-      "value": 55,
-      "mask": 128
+      "value": 12,
+      "mask": 131
     },
     "c_output": {
-      "value": 33,
-      "mask": 63360
+      "value": 0,
+      "mask": 32767
     },
     "rust_output": {
-      "value": 8481,
-      "mask": 38016
+      "value": 0,
+      "mask": 8191
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 63,
+    "case_number": 47,
     "input_a": {
-      "value": 81,
-      "mask": 140
+      "value": 199,
+      "mask": 8
     },
     "input_b": {
-      "value": 171,
-      "mask": 0
+      "value": 185,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 32771,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 524287
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 47,
+    "input_a": {
+      "value": 199,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 185,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 32771,
+      "mask": 16380
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 48,
+    "input_a": {
+      "value": 109,
+      "mask": 16
+    },
+    "input_b": {
+      "value": 227,
+      "mask": 20
     },
     "c_output": {
       "value": 3,
       "mask": 65532
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 64,
-    "input_a": {
-      "value": 216,
-      "mask": 38
-    },
-    "input_b": {
-      "value": 226,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 32768,
-      "mask": 32766
-    },
-    "method": "tnum_mul_opt"
-  },
-  {
-    "case_number": 64,
-    "input_a": {
-      "value": 216,
-      "mask": 38
-    },
-    "input_b": {
-      "value": 226,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 64,
-    "input_a": {
-      "value": 216,
-      "mask": 38
-    },
-    "input_b": {
-      "value": 226,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 65,
-    "input_a": {
-      "value": 173,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 115,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 55,
-      "mask": 65408
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 65,
-    "input_a": {
-      "value": 173,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 115,
-      "mask": 128
-    },
-    "c_output": {
-      "value": 55,
-      "mask": 65408
-    },
-    "rust_output": {
-      "value": 1079,
-      "mask": 59776
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 66,
-    "input_a": {
-      "value": 104,
-      "mask": 23
-    },
-    "input_b": {
-      "value": 200,
-      "mask": 51
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 16777215
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 66,
-    "input_a": {
-      "value": 104,
-      "mask": 23
-    },
-    "input_b": {
-      "value": 200,
-      "mask": 51
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 67,
-    "input_a": {
-      "value": 76,
-      "mask": 129
-    },
-    "input_b": {
-      "value": 108,
-      "mask": 130
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435455
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 67,
-    "input_a": {
-      "value": 76,
-      "mask": 129
-    },
-    "input_b": {
-      "value": 108,
-      "mask": 130
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 68,
-    "input_a": {
-      "value": 49,
-      "mask": 200
-    },
-    "input_b": {
-      "value": 11,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 3,
-      "mask": 8184
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 262143
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 68,
-    "input_a": {
-      "value": 49,
-      "mask": 200
-    },
-    "input_b": {
-      "value": 11,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 3,
-      "mask": 8184
-    },
-    "rust_output": {
-      "value": 3,
-      "mask": 4088
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 69,
-    "input_a": {
-      "value": 1,
-      "mask": 216
-    },
-    "input_b": {
-      "value": 52,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 20,
-      "mask": 32744
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194300
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 69,
-    "input_a": {
-      "value": 1,
-      "mask": 216
-    },
-    "input_b": {
-      "value": 52,
-      "mask": 8
-    },
-    "c_output": {
-      "value": 20,
-      "mask": 32744
-    },
-    "rust_output": {
-      "value": 20,
-      "mask": 16360
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 70,
-    "input_a": {
-      "value": 14,
-      "mask": 49
-    },
-    "input_b": {
-      "value": 217,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 6,
-      "mask": 32761
     },
     "rust_output": {
       "value": 0,
@@ -2640,478 +1680,58 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 70,
+    "case_number": 48,
     "input_a": {
-      "value": 14,
-      "mask": 49
+      "value": 109,
+      "mask": 16
     },
     "input_b": {
-      "value": 217,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 6,
-      "mask": 32761
-    },
-    "rust_output": {
-      "value": 6,
-      "mask": 16377
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 71,
-    "input_a": {
-      "value": 244,
-      "mask": 3
-    },
-    "input_b": {
-      "value": 107,
+      "value": 227,
       "mask": 20
     },
     "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 1048575
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 71,
-    "input_a": {
-      "value": 244,
-      "mask": 3
-    },
-    "input_b": {
-      "value": 107,
-      "mask": 20
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 72,
-    "input_a": {
-      "value": 46,
-      "mask": 192
-    },
-    "input_b": {
-      "value": 193,
-      "mask": 18
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 72,
-    "input_a": {
-      "value": 46,
-      "mask": 192
-    },
-    "input_b": {
-      "value": 193,
-      "mask": 18
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 2,
-      "mask": 65532
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 73,
-    "input_a": {
-      "value": 38,
-      "mask": 64
-    },
-    "input_b": {
-      "value": 110,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 20,
-      "mask": 32736
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8388606
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 73,
-    "input_a": {
-      "value": 38,
-      "mask": 64
-    },
-    "input_b": {
-      "value": 110,
-      "mask": 16
-    },
-    "c_output": {
-      "value": 20,
-      "mask": 32736
-    },
-    "rust_output": {
-      "value": 20,
-      "mask": 16352
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 74,
-    "input_a": {
-      "value": 181,
-      "mask": 2
-    },
-    "input_b": {
-      "value": 246,
-      "mask": 1
-    },
-    "c_output": {
-      "value": 40960,
-      "mask": 8191
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 75,
-    "input_a": {
-      "value": 226,
-      "mask": 17
-    },
-    "input_b": {
-      "value": 189,
-      "mask": 66
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 75,
-    "input_a": {
-      "value": 226,
-      "mask": 17
-    },
-    "input_b": {
-      "value": 189,
-      "mask": 66
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 76,
-    "input_a": {
-      "value": 155,
-      "mask": 36
-    },
-    "input_b": {
-      "value": 94,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 32760
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 524286
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 77,
-    "input_a": {
-      "value": 18,
-      "mask": 108
-    },
-    "input_b": {
-      "value": 171,
-      "mask": 84
-    },
-    "c_output": {
-      "value": 2,
+      "value": 3,
       "mask": 65532
     },
     "rust_output": {
-      "value": 0,
-      "mask": 33554430
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 77,
-    "input_a": {
-      "value": 18,
-      "mask": 108
-    },
-    "input_b": {
-      "value": 171,
-      "mask": 84
-    },
-    "c_output": {
-      "value": 2,
-      "mask": 65532
-    },
-    "rust_output": {
-      "value": 2,
+      "value": 3,
       "mask": 32764
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 78,
+    "case_number": 49,
     "input_a": {
-      "value": 203,
-      "mask": 36
+      "value": 174,
+      "mask": 65
     },
     "input_b": {
-      "value": 238,
-      "mask": 17
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 33554431
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 78,
-    "input_a": {
-      "value": 203,
-      "mask": 36
-    },
-    "input_b": {
-      "value": 238,
-      "mask": 17
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 79,
-    "input_a": {
-      "value": 56,
-      "mask": 192
-    },
-    "input_b": {
-      "value": 203,
-      "mask": 36
-    },
-    "c_output": {
-      "value": 8,
-      "mask": 131040
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 79,
-    "input_a": {
-      "value": 56,
-      "mask": 192
-    },
-    "input_b": {
-      "value": 203,
-      "mask": 36
-    },
-    "c_output": {
-      "value": 8,
-      "mask": 131040
-    },
-    "rust_output": {
-      "value": 8,
-      "mask": 65504
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 80,
-    "input_a": {
-      "value": 95,
-      "mask": 128
-    },
-    "input_b": {
-      "value": 35,
-      "mask": 156
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 268435455
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 80,
-    "input_a": {
-      "value": 95,
-      "mask": 128
-    },
-    "input_b": {
-      "value": 35,
-      "mask": 156
-    },
-    "c_output": {
-      "value": 1,
-      "mask": 131068
-    },
-    "rust_output": {
-      "value": 1,
-      "mask": 65532
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 81,
-    "input_a": {
-      "value": 12,
-      "mask": 83
-    },
-    "input_b": {
-      "value": 242,
-      "mask": 5
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 2097151
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 81,
-    "input_a": {
-      "value": 12,
-      "mask": 83
-    },
-    "input_b": {
-      "value": 242,
-      "mask": 5
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 82,
-    "input_a": {
-      "value": 119,
+      "value": 198,
       "mask": 8
     },
-    "input_b": {
-      "value": 64,
-      "mask": 184
-    },
     "c_output": {
-      "value": 0,
-      "mask": 65528
+      "value": 32768,
+      "mask": 32766
     },
     "rust_output": {
       "value": 0,
-      "mask": 8388607
+      "mask": 131070
     },
-    "method": "xtnum_mul_top"
+    "method": "tnum_mul_opt"
   },
   {
-    "case_number": 82,
+    "case_number": 49,
     "input_a": {
-      "value": 119,
+      "value": 174,
+      "mask": 65
+    },
+    "input_b": {
+      "value": 198,
       "mask": 8
     },
-    "input_b": {
-      "value": 64,
-      "mask": 184
-    },
     "c_output": {
-      "value": 0,
-      "mask": 65528
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32760
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 83,
-    "input_a": {
-      "value": 240,
-      "mask": 10
-    },
-    "input_b": {
-      "value": 217,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131066
+      "value": 32768,
+      "mask": 32766
     },
     "rust_output": {
       "value": 0,
@@ -3120,38 +1740,638 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 83,
+    "case_number": 49,
     "input_a": {
-      "value": 240,
-      "mask": 10
+      "value": 174,
+      "mask": 65
     },
     "input_b": {
-      "value": 217,
-      "mask": 32
+      "value": 198,
+      "mask": 8
     },
     "c_output": {
-      "value": 0,
-      "mask": 131066
+      "value": 32768,
+      "mask": 32766
     },
     "rust_output": {
       "value": 0,
-      "mask": 65530
+      "mask": 65534
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 84,
+    "case_number": 50,
     "input_a": {
-      "value": 24,
-      "mask": 5
+      "value": 252,
+      "mask": 2
     },
     "input_b": {
-      "value": 29,
-      "mask": 160
+      "value": 51,
+      "mask": 132
     },
     "c_output": {
       "value": 0,
-      "mask": 16381
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194302
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 50,
+    "input_a": {
+      "value": 252,
+      "mask": 2
+    },
+    "input_b": {
+      "value": 51,
+      "mask": 132
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 51,
+    "input_a": {
+      "value": 65,
+      "mask": 136
+    },
+    "input_b": {
+      "value": 71,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 7,
+      "mask": 131064
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 51,
+    "input_a": {
+      "value": 65,
+      "mask": 136
+    },
+    "input_b": {
+      "value": 71,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 7,
+      "mask": 131064
+    },
+    "rust_output": {
+      "value": 7,
+      "mask": 65528
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 52,
+    "input_a": {
+      "value": 163,
+      "mask": 20
+    },
+    "input_b": {
+      "value": 193,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 65532
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16777215
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 53,
+    "input_a": {
+      "value": 77,
+      "mask": 50
+    },
+    "input_b": {
+      "value": 160,
+      "mask": 11
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 53,
+    "input_a": {
+      "value": 77,
+      "mask": 50
+    },
+    "input_b": {
+      "value": 160,
+      "mask": 11
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 53,
+    "input_a": {
+      "value": 77,
+      "mask": 50
+    },
+    "input_b": {
+      "value": 160,
+      "mask": 11
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 54,
+    "input_a": {
+      "value": 35,
+      "mask": 212
+    },
+    "input_b": {
+      "value": 170,
+      "mask": 16
+    },
+    "c_output": {
+      "value": 6,
+      "mask": 131064
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108862
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 54,
+    "input_a": {
+      "value": 35,
+      "mask": 212
+    },
+    "input_b": {
+      "value": 170,
+      "mask": 16
+    },
+    "c_output": {
+      "value": 6,
+      "mask": 131064
+    },
+    "rust_output": {
+      "value": 6,
+      "mask": 65528
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 55,
+    "input_a": {
+      "value": 14,
+      "mask": 129
+    },
+    "input_b": {
+      "value": 28,
+      "mask": 131
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16777215
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 56,
+    "input_a": {
+      "value": 139,
+      "mask": 68
+    },
+    "input_b": {
+      "value": 51,
+      "mask": 132
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 134217727
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 56,
+    "input_a": {
+      "value": 139,
+      "mask": 68
+    },
+    "input_b": {
+      "value": 51,
+      "mask": 132
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 1,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 57,
+    "input_a": {
+      "value": 139,
+      "mask": 112
+    },
+    "input_b": {
+      "value": 13,
+      "mask": 82
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 33554431
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 57,
+    "input_a": {
+      "value": 139,
+      "mask": 112
+    },
+    "input_b": {
+      "value": 13,
+      "mask": 82
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 1,
+      "mask": 32766
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 58,
+    "input_a": {
+      "value": 139,
+      "mask": 116
+    },
+    "input_b": {
+      "value": 229,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 65532
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 58,
+    "input_a": {
+      "value": 139,
+      "mask": 116
+    },
+    "input_b": {
+      "value": 229,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 33554431
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 58,
+    "input_a": {
+      "value": 139,
+      "mask": 116
+    },
+    "input_b": {
+      "value": 229,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 59,
+    "input_a": {
+      "value": 29,
+      "mask": 66
+    },
+    "input_b": {
+      "value": 32,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32760
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 59,
+    "input_a": {
+      "value": 29,
+      "mask": 66
+    },
+    "input_b": {
+      "value": 32,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16777215
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 59,
+    "input_a": {
+      "value": 29,
+      "mask": 66
+    },
+    "input_b": {
+      "value": 32,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32760
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 60,
+    "input_a": {
+      "value": 43,
+      "mask": 208
+    },
+    "input_b": {
+      "value": 129,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 61,
+    "input_a": {
+      "value": 12,
+      "mask": 240
+    },
+    "input_b": {
+      "value": 183,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 4,
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 61,
+    "input_a": {
+      "value": 12,
+      "mask": 240
+    },
+    "input_b": {
+      "value": 183,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 4,
+      "mask": 131056
+    },
+    "rust_output": {
+      "value": 4,
+      "mask": 65520
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 62,
+    "input_a": {
+      "value": 192,
+      "mask": 49
+    },
+    "input_b": {
+      "value": 133,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131061
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 62,
+    "input_a": {
+      "value": 192,
+      "mask": 49
+    },
+    "input_b": {
+      "value": 133,
+      "mask": 96
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131061
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65525
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 63,
+    "input_a": {
+      "value": 98,
+      "mask": 21
+    },
+    "input_b": {
+      "value": 221,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 262143
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 63,
+    "input_a": {
+      "value": 98,
+      "mask": 21
+    },
+    "input_b": {
+      "value": 221,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 64,
+    "input_a": {
+      "value": 58,
+      "mask": 69
+    },
+    "input_b": {
+      "value": 68,
+      "mask": 16
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 32756
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194300
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 64,
+    "input_a": {
+      "value": 58,
+      "mask": 69
+    },
+    "input_b": {
+      "value": 68,
+      "mask": 16
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 32756
+    },
+    "rust_output": {
+      "value": 8,
+      "mask": 16372
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 65,
+    "input_a": {
+      "value": 95,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 132,
+      "mask": 99
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
     },
     "rust_output": {
       "value": 0,
@@ -3160,518 +2380,58 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 84,
+    "case_number": 66,
     "input_a": {
-      "value": 24,
-      "mask": 5
-    },
-    "input_b": {
-      "value": 29,
-      "mask": 160
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 16381
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8189
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 85,
-    "input_a": {
-      "value": 153,
-      "mask": 70
-    },
-    "input_b": {
-      "value": 66,
-      "mask": 37
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 85,
-    "input_a": {
-      "value": 153,
-      "mask": 70
-    },
-    "input_b": {
-      "value": 66,
-      "mask": 37
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 86,
-    "input_a": {
-      "value": 72,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 214,
-      "mask": 33
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 67108863
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 86,
-    "input_a": {
-      "value": 72,
-      "mask": 130
-    },
-    "input_b": {
-      "value": 214,
-      "mask": 33
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 87,
-    "input_a": {
-      "value": 173,
-      "mask": 16
-    },
-    "input_b": {
-      "value": 77,
+      "value": 207,
       "mask": 0
     },
-    "c_output": {
-      "value": 12297,
-      "mask": 3280
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 87,
-    "input_a": {
-      "value": 173,
+    "input_b": {
+      "value": 224,
       "mask": 16
-    },
-    "input_b": {
-      "value": 77,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 12297,
-      "mask": 3280
-    },
-    "rust_output": {
-      "value": 8201,
-      "mask": 8144
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 88,
-    "input_a": {
-      "value": 186,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 230,
-      "mask": 9
     },
     "c_output": {
       "value": 32768,
-      "mask": 32767
+      "mask": 32752
     },
     "rust_output": {
       "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 89,
-    "input_a": {
-      "value": 134,
-      "mask": 33
-    },
-    "input_b": {
-      "value": 251,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 8388607
+      "mask": 524287
     },
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 89,
+    "case_number": 66,
     "input_a": {
-      "value": 134,
-      "mask": 33
-    },
-    "input_b": {
-      "value": 251,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131071
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 90,
-    "input_a": {
-      "value": 218,
-      "mask": 5
-    },
-    "input_b": {
-      "value": 250,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 262143
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 90,
-    "input_a": {
-      "value": 218,
-      "mask": 5
-    },
-    "input_b": {
-      "value": 250,
-      "mask": 4
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 91,
-    "input_a": {
-      "value": 135,
-      "mask": 56
-    },
-    "input_b": {
-      "value": 82,
-      "mask": 13
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 92,
-    "input_a": {
-      "value": 73,
-      "mask": 52
-    },
-    "input_b": {
-      "value": 212,
-      "mask": 34
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 65530
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 33554431
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 92,
-    "input_a": {
-      "value": 73,
-      "mask": 52
-    },
-    "input_b": {
-      "value": 212,
-      "mask": 34
-    },
-    "c_output": {
-      "value": 4,
-      "mask": 65530
-    },
-    "rust_output": {
-      "value": 4,
-      "mask": 32762
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 93,
-    "input_a": {
-      "value": 183,
+      "value": 207,
       "mask": 0
     },
     "input_b": {
-      "value": 13,
-      "mask": 32
+      "value": 224,
+      "mask": 16
     },
     "c_output": {
-      "value": 11,
-      "mask": 16352
+      "value": 32768,
+      "mask": 32752
     },
     "rust_output": {
       "value": 0,
-      "mask": 262143
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 93,
-    "input_a": {
-      "value": 183,
-      "mask": 0
-    },
-    "input_b": {
-      "value": 13,
-      "mask": 32
-    },
-    "c_output": {
-      "value": 11,
-      "mask": 16352
-    },
-    "rust_output": {
-      "value": 11,
-      "mask": 10592
+      "mask": 65520
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 94,
+    "case_number": 67,
     "input_a": {
-      "value": 60,
-      "mask": 67
+      "value": 48,
+      "mask": 197
     },
     "input_b": {
-      "value": 169,
-      "mask": 6
+      "value": 123,
+      "mask": 0
     },
     "c_output": {
       "value": 0,
       "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 94,
-    "input_a": {
-      "value": 60,
-      "mask": 67
-    },
-    "input_b": {
-      "value": 169,
-      "mask": 6
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 65535
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 32767
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 95,
-    "input_a": {
-      "value": 214,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 29,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 6146,
-      "mask": 125
-    },
-    "rust_output": {
-      "value": 6170,
-      "mask": 101
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 95,
-    "input_a": {
-      "value": 214,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 29,
-      "mask": 0
-    },
-    "c_output": {
-      "value": 6146,
-      "mask": 125
-    },
-    "rust_output": {
-      "value": 2,
-      "mask": 8189
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 96,
-    "input_a": {
-      "value": 73,
-      "mask": 50
-    },
-    "input_b": {
-      "value": 26,
-      "mask": 224
-    },
-    "c_output": {
-      "value": 10,
-      "mask": 65524
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 33554431
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 96,
-    "input_a": {
-      "value": 73,
-      "mask": 50
-    },
-    "input_b": {
-      "value": 26,
-      "mask": 224
-    },
-    "c_output": {
-      "value": 10,
-      "mask": 65524
-    },
-    "rust_output": {
-      "value": 10,
-      "mask": 32756
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 97,
-    "input_a": {
-      "value": 254,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 32,
-      "mask": 134
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 4194303
-    },
-    "method": "xtnum_mul_top"
-  },
-  {
-    "case_number": 97,
-    "input_a": {
-      "value": 254,
-      "mask": 1
-    },
-    "input_b": {
-      "value": 32,
-      "mask": 134
-    },
-    "c_output": {
-      "value": 0,
-      "mask": 131070
-    },
-    "rust_output": {
-      "value": 0,
-      "mask": 65534
-    },
-    "method": "xtnum_mul_high_top"
-  },
-  {
-    "case_number": 98,
-    "input_a": {
-      "value": 101,
-      "mask": 8
-    },
-    "input_b": {
-      "value": 58,
-      "mask": 64
-    },
-    "c_output": {
-      "value": 34,
-      "mask": 16336
     },
     "rust_output": {
       "value": 0,
@@ -3680,34 +2440,74 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 98,
+    "case_number": 67,
     "input_a": {
-      "value": 101,
-      "mask": 8
+      "value": 48,
+      "mask": 197
     },
     "input_b": {
-      "value": 58,
-      "mask": 64
+      "value": 123,
+      "mask": 0
     },
     "c_output": {
-      "value": 34,
-      "mask": 16336
+      "value": 0,
+      "mask": 65535
     },
     "rust_output": {
-      "value": 2,
-      "mask": 16368
+      "value": 0,
+      "mask": 32767
     },
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 99,
+    "case_number": 68,
     "input_a": {
-      "value": 178,
-      "mask": 77
+      "value": 231,
+      "mask": 0
     },
     "input_b": {
-      "value": 33,
-      "mask": 198
+      "value": 104,
+      "mask": 145
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131063
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 68,
+    "input_a": {
+      "value": 231,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 104,
+      "mask": 145
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131063
+    },
+    "rust_output": {
+      "value": 8,
+      "mask": 65527
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 69,
+    "input_a": {
+      "value": 120,
+      "mask": 135
+    },
+    "input_b": {
+      "value": 65,
+      "mask": 166
     },
     "c_output": {
       "value": 0,
@@ -3720,14 +2520,14 @@
     "method": "xtnum_mul_top"
   },
   {
-    "case_number": 99,
+    "case_number": 69,
     "input_a": {
-      "value": 178,
-      "mask": 77
+      "value": 120,
+      "mask": 135
     },
     "input_b": {
-      "value": 33,
-      "mask": 198
+      "value": 65,
+      "mask": 166
     },
     "c_output": {
       "value": 0,
@@ -3740,14 +2540,254 @@
     "method": "xtnum_mul_high_top"
   },
   {
-    "case_number": 100,
+    "case_number": 70,
     "input_a": {
-      "value": 128,
-      "mask": 31
+      "value": 200,
+      "mask": 32
     },
     "input_b": {
-      "value": 148,
-      "mask": 106
+      "value": 118,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 48,
+      "mask": 131008
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108856
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 70,
+    "input_a": {
+      "value": 200,
+      "mask": 32
+    },
+    "input_b": {
+      "value": 118,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 48,
+      "mask": 131008
+    },
+    "rust_output": {
+      "value": 48,
+      "mask": 65472
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 71,
+    "input_a": {
+      "value": 60,
+      "mask": 3
+    },
+    "input_b": {
+      "value": 124,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16382
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 71,
+    "input_a": {
+      "value": 60,
+      "mask": 3
+    },
+    "input_b": {
+      "value": 124,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 16382
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8190
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 72,
+    "input_a": {
+      "value": 229,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 180,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 40964,
+      "mask": 8186
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048574
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 72,
+    "input_a": {
+      "value": 229,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 180,
+      "mask": 2
+    },
+    "c_output": {
+      "value": 40964,
+      "mask": 8186
+    },
+    "rust_output": {
+      "value": 4,
+      "mask": 65530
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 73,
+    "input_a": {
+      "value": 232,
+      "mask": 19
+    },
+    "input_b": {
+      "value": 105,
+      "mask": 134
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 73,
+    "input_a": {
+      "value": 232,
+      "mask": 19
+    },
+    "input_b": {
+      "value": 105,
+      "mask": 134
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 74,
+    "input_a": {
+      "value": 147,
+      "mask": 76
+    },
+    "input_b": {
+      "value": 119,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 74,
+    "input_a": {
+      "value": 147,
+      "mask": 76
+    },
+    "input_b": {
+      "value": 119,
+      "mask": 136
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 1,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 75,
+    "input_a": {
+      "value": 210,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 5,
+      "mask": 250
+    },
+    "c_output": {
+      "value": 10,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194302
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 75,
+    "input_a": {
+      "value": 210,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 5,
+      "mask": 250
+    },
+    "c_output": {
+      "value": 10,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 10,
+      "mask": 65524
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 76,
+    "input_a": {
+      "value": 82,
+      "mask": 161
+    },
+    "input_b": {
+      "value": 68,
+      "mask": 50
     },
     "c_output": {
       "value": 0,
@@ -3755,8 +2795,1008 @@
     },
     "rust_output": {
       "value": 0,
+      "mask": 33554430
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 76,
+    "input_a": {
+      "value": 82,
+      "mask": 161
+    },
+    "input_b": {
+      "value": 68,
+      "mask": 50
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 77,
+    "input_a": {
+      "value": 145,
+      "mask": 4
+    },
+    "input_b": {
+      "value": 35,
+      "mask": 8
+    },
+    "c_output": {
+      "value": 4099,
+      "mask": 4092
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 131071
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 78,
+    "input_a": {
+      "value": 205,
+      "mask": 34
+    },
+    "input_b": {
+      "value": 178,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 32770,
+      "mask": 32764
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 78,
+    "input_a": {
+      "value": 205,
+      "mask": 34
+    },
+    "input_b": {
+      "value": 178,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 2097150
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 78,
+    "input_a": {
+      "value": 205,
+      "mask": 34
+    },
+    "input_b": {
+      "value": 178,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 131068
+    },
+    "rust_output": {
+      "value": 2,
+      "mask": 65532
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 79,
+    "input_a": {
+      "value": 20,
+      "mask": 224
+    },
+    "input_b": {
+      "value": 45,
+      "mask": 208
+    },
+    "c_output": {
+      "value": 4,
+      "mask": 131040
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435452
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 79,
+    "input_a": {
+      "value": 20,
+      "mask": 224
+    },
+    "input_b": {
+      "value": 45,
+      "mask": 208
+    },
+    "c_output": {
+      "value": 4,
+      "mask": 131040
+    },
+    "rust_output": {
+      "value": 4,
+      "mask": 65504
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 80,
+    "input_a": {
+      "value": 230,
+      "mask": 24
+    },
+    "input_b": {
+      "value": 230,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 49152,
+      "mask": 16382
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 80,
+    "input_a": {
+      "value": 230,
+      "mask": 24
+    },
+    "input_b": {
+      "value": 230,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 524287
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 80,
+    "input_a": {
+      "value": 230,
+      "mask": 24
+    },
+    "input_b": {
+      "value": 230,
+      "mask": 1
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 81,
+    "input_a": {
+      "value": 240,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 171,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 32784,
+      "mask": 32235
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 81,
+    "input_a": {
+      "value": 240,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 171,
+      "mask": 64
+    },
+    "c_output": {
+      "value": 32784,
+      "mask": 32235
+    },
+    "rust_output": {
+      "value": 16,
+      "mask": 65515
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 82,
+    "input_a": {
+      "value": 109,
+      "mask": 18
+    },
+    "input_b": {
+      "value": 78,
+      "mask": 17
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 82,
+    "input_a": {
+      "value": 109,
+      "mask": 18
+    },
+    "input_b": {
+      "value": 78,
+      "mask": 17
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16383
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 83,
+    "input_a": {
+      "value": 211,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 137,
+      "mask": 80
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 3,
+      "mask": 131064
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 83,
+    "input_a": {
+      "value": 211,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 137,
+      "mask": 80
+    },
+    "c_output": {
+      "value": 3,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 84,
+    "input_a": {
+      "value": 213,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 8,
+      "mask": 54
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 262143
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 84,
+    "input_a": {
+      "value": 213,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 8,
+      "mask": 54
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16382
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 85,
+    "input_a": {
+      "value": 218,
+      "mask": 32
+    },
+    "input_b": {
+      "value": 45,
+      "mask": 128
+    },
+    "c_output": {
+      "value": 82,
+      "mask": 130976
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108862
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 85,
+    "input_a": {
+      "value": 218,
+      "mask": 32
+    },
+    "input_b": {
+      "value": 45,
+      "mask": 128
+    },
+    "c_output": {
+      "value": 82,
+      "mask": 130976
+    },
+    "rust_output": {
+      "value": 82,
+      "mask": 65440
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 86,
+    "input_a": {
+      "value": 172,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 123,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 20480,
+      "mask": 4095
+    },
+    "rust_output": {
+      "value": 16384,
+      "mask": 16383
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 86,
+    "input_a": {
+      "value": 172,
+      "mask": 1
+    },
+    "input_b": {
+      "value": 123,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 20480,
+      "mask": 4095
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 87,
+    "input_a": {
+      "value": 255,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 78,
+      "mask": 32
+    },
+    "c_output": {
+      "value": 16402,
+      "mask": 16352
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 1048575
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 87,
+    "input_a": {
+      "value": 255,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 78,
+      "mask": 32
+    },
+    "c_output": {
+      "value": 16402,
+      "mask": 16352
+    },
+    "rust_output": {
+      "value": 16786,
+      "mask": 15392
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 88,
+    "input_a": {
+      "value": 254,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 104,
+      "mask": 6
+    },
+    "c_output": {
+      "value": 24576,
+      "mask": 4092
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 88,
+    "input_a": {
+      "value": 254,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 104,
+      "mask": 6
+    },
+    "c_output": {
+      "value": 24576,
+      "mask": 4092
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32764
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 89,
+    "input_a": {
+      "value": 199,
+      "mask": 40
+    },
+    "input_b": {
+      "value": 145,
+      "mask": 66
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 89,
+    "input_a": {
+      "value": 199,
+      "mask": 40
+    },
+    "input_b": {
+      "value": 145,
+      "mask": 66
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 5,
+      "mask": 65530
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 90,
+    "input_a": {
+      "value": 113,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 187,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 20491,
+      "mask": 1988
+    },
+    "rust_output": {
+      "value": 20488,
+      "mask": 4087
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 90,
+    "input_a": {
+      "value": 113,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 187,
+      "mask": 4
+    },
+    "c_output": {
+      "value": 20491,
+      "mask": 1988
+    },
+    "rust_output": {
+      "value": 11,
+      "mask": 32708
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 91,
+    "input_a": {
+      "value": 34,
+      "mask": 221
+    },
+    "input_b": {
+      "value": 16,
+      "mask": 162
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 268435455
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 91,
+    "input_a": {
+      "value": 34,
+      "mask": 221
+    },
+    "input_b": {
+      "value": 16,
+      "mask": 162
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 131070
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 65534
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 92,
+    "input_a": {
+      "value": 33,
+      "mask": 204
+    },
+    "input_b": {
+      "value": 232,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108860
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 92,
+    "input_a": {
+      "value": 33,
+      "mask": 204
+    },
+    "input_b": {
+      "value": 232,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 8,
+      "mask": 131060
+    },
+    "rust_output": {
+      "value": 8,
+      "mask": 65524
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 93,
+    "input_a": {
+      "value": 93,
+      "mask": 2
+    },
+    "input_b": {
+      "value": 161,
+      "mask": 76
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 32766
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 94,
+    "input_a": {
+      "value": 145,
+      "mask": 8
+    },
+    "input_b": {
+      "value": 34,
+      "mask": 133
+    },
+    "c_output": {
+      "value": 2,
+      "mask": 32765
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 4194303
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 95,
+    "input_a": {
+      "value": 146,
+      "mask": 77
+    },
+    "input_b": {
+      "value": 74,
+      "mask": 17
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 95,
+    "input_a": {
+      "value": 146,
+      "mask": 77
+    },
+    "input_b": {
+      "value": 74,
+      "mask": 17
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
       "mask": 16777215
     },
     "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 95,
+    "input_a": {
+      "value": 146,
+      "mask": 77
+    },
+    "input_b": {
+      "value": 74,
+      "mask": 17
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 96,
+    "input_a": {
+      "value": 39,
+      "mask": 152
+    },
+    "input_b": {
+      "value": 16,
+      "mask": 72
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32760
+    },
+    "method": "tnum_mul_opt"
+  },
+  {
+    "case_number": 96,
+    "input_a": {
+      "value": 39,
+      "mask": 152
+    },
+    "input_b": {
+      "value": 16,
+      "mask": 72
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16777212
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 96,
+    "input_a": {
+      "value": 39,
+      "mask": 152
+    },
+    "input_b": {
+      "value": 16,
+      "mask": 72
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65528
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32760
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 97,
+    "input_a": {
+      "value": 183,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 57,
+      "mask": 66
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 67108863
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 97,
+    "input_a": {
+      "value": 183,
+      "mask": 64
+    },
+    "input_b": {
+      "value": 57,
+      "mask": 66
+    },
+    "c_output": {
+      "value": 1,
+      "mask": 65534
+    },
+    "rust_output": {
+      "value": 5,
+      "mask": 32762
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 98,
+    "input_a": {
+      "value": 234,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 235,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 49158,
+      "mask": 16376
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 524286
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 98,
+    "input_a": {
+      "value": 234,
+      "mask": 0
+    },
+    "input_b": {
+      "value": 235,
+      "mask": 20
+    },
+    "c_output": {
+      "value": 49158,
+      "mask": 16376
+    },
+    "rust_output": {
+      "value": 6,
+      "mask": 65528
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 99,
+    "input_a": {
+      "value": 122,
+      "mask": 5
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 75
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 8388607
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 99,
+    "input_a": {
+      "value": 122,
+      "mask": 5
+    },
+    "input_b": {
+      "value": 176,
+      "mask": 75
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
+  },
+  {
+    "case_number": 100,
+    "input_a": {
+      "value": 164,
+      "mask": 19
+    },
+    "input_b": {
+      "value": 3,
+      "mask": 100
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 16777215
+    },
+    "method": "xtnum_mul_top"
+  },
+  {
+    "case_number": 100,
+    "input_a": {
+      "value": 164,
+      "mask": 19
+    },
+    "input_b": {
+      "value": 3,
+      "mask": 100
+    },
+    "c_output": {
+      "value": 0,
+      "mask": 65535
+    },
+    "rust_output": {
+      "value": 0,
+      "mask": 32767
+    },
+    "method": "xtnum_mul_high_top"
   }
 ]

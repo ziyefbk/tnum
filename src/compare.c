@@ -279,20 +279,10 @@ int main(int argc, char *argv[])
         }
     }
 
-    // 获取C_tnum_mul的平均时间，用于计算相对性能
-    double c_mul_avg_time = 0.0;
-    for (int i = 0; i < NUM_METHODS; i++)
-    {
-        if (strcmp(stats[i].method, "C_tnum_mul") == 0)
-        {
-            c_mul_avg_time = stats[i].avg_time;
-            break;
-        }
-    }
 
     // 打印统计结果
     printf("\n=== 性能与正确性比较（以C_tnum_mul为基准）===\n");
-    printf("%-24s %-15s %-12s %-15s\n", "方法", "平均时间(ns)", "正确率", "相对性能");
+    printf("%-24s %-21s %s\n", "方法", "平均时间(ns)", "正确率");
     printf("------------------------------------------------------------------------\n");
 
     for (int i = 0; i < NUM_METHODS; i++)
@@ -300,33 +290,11 @@ int main(int argc, char *argv[])
         if (stats[i].total_count > 0)
         {
             double accuracy = (double)stats[i].correct_count / stats[i].total_count * 100.0;
-            double relative_perf = c_mul_avg_time / stats[i].avg_time; // 值越大越快
 
-            printf("%-24s %-15.2f %-10.1f%% ",
+            printf("%-24s %-15.2f %.1f%% ",
                    stats[i].method,
                    stats[i].avg_time,
                    accuracy);
-
-            // 打印相对性能
-            if (strcmp(stats[i].method, "C_tnum_mul") == 0)
-            {
-                printf("%-15s", "1.00x (基准)");
-            }
-            else
-            {
-                if (relative_perf > 1.0)
-                {
-                    printf("%-15.2fx \033[32m(更快)\033[0m", relative_perf);
-                }
-                else if (relative_perf < 1.0)
-                {
-                    printf("%-15.2fx \033[31m(更慢)\033[0m", relative_perf);
-                }
-                else
-                {
-                    printf("%-15.2fx (相同)", relative_perf);
-                }
-            }
 
             printf("\n");
         }

@@ -7,6 +7,9 @@ BUILD_DIR = build
 RUST_JSON = ./build/rust_test_cases.json
 C_JSON = ./build/c_test_results.json
 
+N ?= 100
+ITERATIONS ?= 100
+
 # 创建构建目录
 $(BUILD_DIR):
 	mkdir -p $(BUILD_DIR)
@@ -25,26 +28,25 @@ $(BUILD_DIR)/compare: $(SRC_DIR)/compare.c | $(BUILD_DIR)
 
 # 生成测试用例（运行test.rs）
 $(RUST_JSON):
-	cargo run --release --bin test_mul -- 100 100
+	cargo run --release --bin test_mul -- $(ITERATIONS) $(N)
 
 # 执行完整测试流程
 test: build rust-test c-test compare-results
 
 # 运行Rust测试
 rust-test: $(RUST_JSON)
-	@echo "✅ Rust测试完成，生成测试用例：$(RUST_JSON)"
+	@echo "Rust测试完成，生成测试用例：$(RUST_JSON)"
 
 # 运行C实现测试
 c-test: $(BUILD_DIR)/tnum_mul rust-test
-	@echo "🔍 运行C实现测试..."
-	$(BUILD_DIR)/tnum_mul $(RUST_JSON)
-	@echo "✅ C测试完成，生成结果：$(C_JSON)"
+	$(BUILD_DIR)/tnum_mul $(RUST_JSON) $(ITERATIONS)
+	@echo "C_tnum_mul测试完成，生成结果：$(C_JSON)"
 
 # 比较结果
 compare-results: $(BUILD_DIR)/compare $(C_JSON)
-	@echo "🔍 比较测试结果..."
+	@echo "比较测试结果..."
 	$(BUILD_DIR)/compare $(C_JSON)
-	@echo "✅ 测试比较完成"
+	@echo "测试比较完成"
 
 # 清理
 clean:
@@ -54,9 +56,9 @@ clean:
 # 显示帮助
 help:
 	@echo "使用说明:"
-	@echo "  make test       - 执行完整测试流程"
-	@echo "  make rust-test  - 只运行Rust测试生成用例"
-	@echo "  make c-test     - 运行C实现测试"
-	@echo "  make clean      - 清理所有生成的文件"
+	@echo "  make test [N=100] [ITERATIONS=100]      - 执行完整测试流程"
+	@echo "  make rust-test [N=100] [ITERATIONS=100] - 只运行Rust测试生成用例"
+	@echo "  make c-test [ITERATIONS=100]            - 运行C实现测试"
+	@echo "  make clean   				   - 清理生成的文件"
 
 .PHONY: test rust-test c-test compare-results clean help

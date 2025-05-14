@@ -22,7 +22,8 @@ int main(int argc, char *argv[]) {
 
     const char *input_file = argv[1];
     const char *output_file = "./build/c_test_results.json";
-
+    const int iterations = (argc > 2) ? atoi(argv[2]) : 1000;
+    
     // 读取JSON文件
     FILE *fp = fopen(input_file, "r");
     if (!fp) {
@@ -87,24 +88,12 @@ int main(int argc, char *argv[]) {
         struct tnum a = {.value = a_value, .mask = a_mask};
         struct tnum b = {.value = b_value, .mask = b_mask};
         
-        // 获取Rust基础tnum_mul的结果
         struct json_object *results_obj;
         json_object_object_get_ex(test_case, "results", &results_obj);
-        // struct json_object *rust_result_obj = json_object_array_get_idx(results_obj, 0); // 第一个结果是tnum_mul
-        
-        // struct json_object *rust_output_obj;
-        // json_object_object_get_ex(rust_result_obj, "output", &rust_output_obj);
-        
-        // // struct json_object *rust_value_obj, *rust_mask_obj;
-        // // json_object_object_get_ex(rust_output_obj, "value", &rust_value_obj);
-        // // json_object_object_get_ex(rust_output_obj, "mask", &rust_mask_obj);
-        
-        // // uint64_t rust_value = json_object_get_uint64(rust_value_obj);
-        // // uint64_t rust_mask = json_object_get_uint64(rust_mask_obj);
 
         // 使用C版本的tnum_mul计算结果
         clock_t start = clock();
-        const int iterations = 1000; // 执行多次取平均以获得更准确的时间
+        // const int iterations = 1000; // 执行多次取平均以获得更准确的时间
         struct tnum c_result;
         
         for (int j = 0; j < iterations; j++) {
@@ -116,12 +105,6 @@ int main(int argc, char *argv[]) {
         c_stats.avg_time_ns += time_taken_ns;
         c_stats.total_count++;
 
-        // // 检查C版本和Rust版本的结果是否一致
-        // bool is_correct = (c_result.value == rust_value && c_result.mask == rust_mask);
-        // if (is_correct) {
-        //     c_stats.correct_count++;
-        // }
-
         // 将C版本的结果添加到test_case
         struct json_object *c_result_obj = json_object_new_object();
         json_object_object_add(c_result_obj, "method", json_object_new_string("C_tnum_mul"));
@@ -132,7 +115,6 @@ int main(int argc, char *argv[]) {
         
         json_object_object_add(c_result_obj, "output", c_output_obj);
         json_object_object_add(c_result_obj, "avg_time_ns", json_object_new_double(time_taken_ns));
-        // json_object_object_add(c_result_obj, "correct", json_object_new_boolean(is_correct));
 
         // 将C的结果添加到results数组
         json_object_array_add(results_obj, c_result_obj);
@@ -143,16 +125,15 @@ int main(int argc, char *argv[]) {
         json_object_array_add(output_array, json_object_get(test_case));
     }
 
-    printf("\n\n总体统计:\n");
-    printf("函数\t\t\t\t\t平均时间(ns)\n");
-    printf("----------------------------------------\n");
+    // printf("\n\n总体统计:\n");
+    // printf("函数\t\t\t\t\t平均时间(ns)\n");
+    // printf("----------------------------------------\n");
     
-    // 计算平均时间和准确率
-    c_stats.avg_time_ns /= c_stats.total_count;
-    // double accuracy = (double)c_stats.correct_count / c_stats.total_count * 100.0;
+    // // 计算平均时间
+    // c_stats.avg_time_ns /= c_stats.total_count;
 
-    printf("%s\t\t\t\t\t%.2f\n", 
-        c_stats.method, c_stats.avg_time_ns);
+    // printf("%s\t\t\t\t\t%.2f\n", 
+    //     c_stats.method, c_stats.avg_time_ns);
 
     // 将结果写入文件
     const char *output_json = json_object_to_json_string_ext(output_array, JSON_C_TO_STRING_PRETTY);
